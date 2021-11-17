@@ -19,6 +19,9 @@ ul,
 link {
   margin: 0;
 }
+img {
+  margin: 0;
+}
 
 :root {
   --primary-text-color: #212121;
@@ -30,7 +33,7 @@ link {
 }
 
 body {
-  background-color: var(--primary-bacground-color);
+  /* background-color: var(--primary-bacground-color); */
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -197,11 +200,9 @@ span {
 .button-secondary {
   /* width: 200px; */
   min-height: 38px;
-  /* display: inline-block; */
-
   padding: 6px 22px;
+  margin-left: 8px;
   border: 2px solid transparent;
-  border-radius: 3px;
   cursor: pointer;
   background: #f5f4fa;
   border-radius: 4px;
@@ -210,7 +211,6 @@ span {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.16;
-  outline: 2px solid black;
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -219,15 +219,32 @@ span {
 }
 /* main  1 */
 /* СПИСОК ПРИИМУЩЕСТВ */
-.feature-list .title {
+
+.feature {
+  display: flex;
+  padding: 0;
+  margin: 94px 30px 94px 0;
+}
+
+.feature .title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+  max-width: 270px;
+}
+.feature p {
+  max-width: 270px;
 }
 
+/* chto my delaem */
+
 /* БОЛЬШОЙ ЗАГОЛОВОК */
+
 .title-big {
+  padding-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
@@ -235,7 +252,16 @@ span {
   letter-spacing: 0.03em;
 }
 /* СПИСОК ПРИИМУЩЕСТВ */
-.section-advantage .title {
+.section-work-list {
+  display: flex;
+  padding: 0;
+  /* margin-right: 30px; */
+}
+.section-work-list img {
+  padding-right: 30px;
+  margin-bottom: 94px;
+}
+. .section-advantage .title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -248,13 +274,35 @@ span {
   color: var(--title-text-color);
 }
 /* КОМАНДА */
+.section-team {
+  background-color: #f5f4fa;
+}
+.section-team .title-big {
+  padding-top: 94px;
+}
+.section-team-list {
+  display: flex;
+  width: 270px;
+  height: 368px;
+  padding: 0;
+  margin-right: 30px;
+}
+.section-team-list li {
+  background-color: #ffffff;
+  margin-right: 30px;
+}
 .section-team .title {
+  /* margin-left: 67px; */
+  text-align: center;
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .section-team .text {
+  margin-top: 10px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -262,22 +310,47 @@ span {
 }
 
 /* main  2 */
+.example-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 34px;
+  padding-bottom: 16px;
+}
+.img-example-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-inline-start: 0;
+  margin-bottom: 94px;
+}
+.img-example-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  max-width: 370px;
+}
 .section-example .title {
+  margin: 20px 24px 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .section-example .text {
+  margin: 0 24px 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 /* futer */
+
 footer li {
   font-style: normal;
   list-style-type: none;
+}
+.footer-list {
+  padding: 0px;
 }
 .footer {
   background-color: var(--secondary-bacground-color);
@@ -296,3 +369,4 @@ footer li {
 .footer-list .link:focus {
   color: var(--accent-color);
 }
+gap: 30px;
