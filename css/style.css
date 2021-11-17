@@ -1,3 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+link {
+  margin: 0;
+}
+
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
@@ -5,9 +27,6 @@
   --primary-bacground-color: #e5e5e5;
   --secondary-bacground-color: #2f303a;
   --special: #ffffff99;
-}
-header {
-  background-color: #ffffff;
 }
 
 body {
@@ -19,32 +38,68 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
 
+  /* ne uverniy */
+  /* position: relative; */
+  /* width: 1600px; */
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+  outline: 2px solid tomato;
+}
+header {
+  background-color: #ffffff;
+}
 li {
   list-style-type: none;
 }
 a {
   text-decoration: none;
 }
-
+/* header */
+header {
+  border-bottom: 1px solid #ececec;
+}
+/* nav */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+/* ЛОГО */
 .logo {
+  /* display: flex; */
+  margin: 25px 0;
+  margin-right: 93px;
   color: var(--primary-text-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.second {
+  color: white;
 }
 span {
   color: var(--accent-color);
 }
-/* Site nav */
 
-.auth-nav .link {
-  color: var(--title-text-color);
-  font-family: Roboto;
-  font-weight: 500;
-  line-height: 1, 14;
-  letter-spacing: 0.02em;
+.site-nav {
+  display: flex;
+  /* margin-right: 331px; */
+  padding: 0;
+}
+.site-nav a {
+  margin-right: 50px;
+}
+.site-nav:last-child {
+  margin-right: 0;
 }
 
 .site-nav .link {
+  /* margin-right: 50px; */
   font-family: Roboto;
   font-weight: 500;
   line-height: 1, 14;
@@ -58,6 +113,24 @@ span {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+}
+.auth-nav a {
+  margin-right: 50px;
+}
+.auth-nav a:last-child {
+  /* margin-right: 0; */
+}
+.auth-nav .link {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+}
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -67,18 +140,49 @@ span {
 /*герой*/
 .hero {
   background-color: var(--secondary-bacground-color);
+  text-align: center;
+  /* position: absolute; */
+  /* width: 1600px; */
+  /* height: 600px; */
+  /* left: 0px; */
+  /* top: 80px; */
 }
-.hero-title {
-  color: #ffffff;
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* margin: 0 auto; */
+}
 
+.hero-title {
+  /* display: flex; */
+  min-width: 696px;
+  /* height: 120px; */
+  align-self: center;
+  margin: 200px 452px 0;
+  color: #ffffff;
+  margin: ;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+
+  /* left: 452px; */
+  /* top: 280px; */
 }
+/* 1 КНОПКА */
 .button-primary {
+  align-self: center;
+  width: 200px;
+  min-height: 50px;
+  /* display: inline-block; */
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  border: 2px solid transparent;
+  border-radius: 3px;
   cursor: pointer;
   background-color: var(--accent-color);
   color: #ffffff;
@@ -91,6 +195,13 @@ span {
 
 /*2knopka*/
 .button-secondary {
+  /* width: 200px; */
+  min-height: 38px;
+  /* display: inline-block; */
+
+  padding: 6px 22px;
+  border: 2px solid transparent;
+  border-radius: 3px;
   cursor: pointer;
   background: #f5f4fa;
   border-radius: 4px;
@@ -99,6 +210,7 @@ span {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.16;
+  outline: 2px solid black;
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -106,13 +218,15 @@ span {
   color: #ffffff;
 }
 /* main  1 */
-
+/* СПИСОК ПРИИМУЩЕСТВ */
 .feature-list .title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+/* БОЛЬШОЙ ЗАГОЛОВОК */
 .title-big {
   font-weight: bold;
   font-size: 36px;
@@ -120,6 +234,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* СПИСОК ПРИИМУЩЕСТВ */
 .section-advantage .title {
   font-weight: bold;
   font-size: 14px;
@@ -132,7 +247,7 @@ span {
   font-weight: 400;
   color: var(--title-text-color);
 }
-
+/* КОМАНДА */
 .section-team .title {
   font-weight: 500;
   font-size: 16px;
@@ -180,11 +295,4 @@ footer li {
 .footer-list .link:hover,
 .footer-list .link:focus {
   color: var(--accent-color);
-}
-.logo {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
