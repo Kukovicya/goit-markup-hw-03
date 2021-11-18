@@ -335,12 +335,19 @@ span {
 }
 /* futer */
 
+.footer-container {
+  padding: 60px 15px;
+}
+
 footer li {
   font-style: normal;
   list-style-type: none;
 }
-.footer-list {
-  padding: 0px;
+.footer li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer a {
+  margin: 0;
 }
 .footer {
   background-color: var(--secondary-bacground-color);
@@ -348,6 +355,10 @@ footer li {
 .point {
   color: #ffffff;
   font-weight: 400;
+}
+.footer-list {
+  margin-top: 20px;
+  padding: 0;
 }
 
 .footer-list .link {
