@@ -35,7 +35,7 @@ img {
 }
 
 body {
-  /* background-color: var(--primary-bacground-color); */
+  background-color: var(--primary-bacground-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -43,10 +43,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  /* ne uverniy */
-  /* position: relative; */
-  /* width: 1600px; */
 }
 .section {
   padding: 94px 0;
@@ -55,7 +51,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 header {
   background-color: #ffffff;
@@ -153,45 +149,24 @@ span {
 .hero {
   background-color: var(--secondary-bacground-color);
   text-align: center;
-  /* position: absolute; */
-  /* width: 1600px; */
-  /* height: 600px; */
-  /* left: 0px; */
-  /* top: 80px; */
-}
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* margin: 0 auto; */
+  padding: 200px 0;
 }
 
 .hero-title {
-  /* display: flex; */
-  min-width: 696px;
-  /* height: 120px; */
-  align-self: center;
-  margin: 200px 452px 0;
+  max-width: 696px;
   color: #ffffff;
-  /* margin: ; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* text-align: center; */
   letter-spacing: 0.06em;
-  /* text-transform: uppercase; */
-
-  /* left: 452px; */
-  /* top: 280px; */
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 /* 1 КНОПКА */
 .button-primary {
   align-self: center;
   width: 200px;
   min-height: 50px;
-  /* display: inline-block; */
-  margin-top: 30px;
-  margin-bottom: 200px;
   padding: 10px 32px;
   border: 2px solid transparent;
   border-radius: 3px;
@@ -199,7 +174,6 @@ span {
   background-color: var(--accent-color);
   color: #ffffff;
   border-radius: 4px;
-  font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
   line-height: 1, 9;
@@ -232,7 +206,7 @@ span {
 .feature {
   display: flex;
   padding: 0;
-  margin: 94px 30px 94px 0;
+  /* margin: 94px 30px 94px 0; */
 }
 
 .feature .title {
@@ -244,6 +218,9 @@ span {
   margin-bottom: 10px;
   max-width: 270px;
 }
+.feature li:not(:last-child) {
+  padding-right: 30px;
+}
 .feature p {
   max-width: 270px;
 }
@@ -253,7 +230,7 @@ span {
 /* БОЛЬШОЙ ЗАГОЛОВОК */
 
 .title-big {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
@@ -264,11 +241,9 @@ span {
 .section-work-list {
   display: flex;
   padding: 0;
-  /* margin-right: 30px; */
 }
-.section-work-list img {
-  padding-right: 30px;
-  margin-bottom: 94px;
+.section-work-list li:not(:last-child) {
+  margin-right: 30px;
 }
 .section-advantage .title {
   font-weight: bold;
@@ -286,9 +261,7 @@ span {
 .section-team {
   background-color: #f5f4fa;
 }
-.section-team .title-big {
-  padding-top: 94px;
-}
+
 .section-team-list {
   display: flex;
   width: 270px;
@@ -299,6 +272,9 @@ span {
 .section-team-list li {
   background-color: #ffffff;
   margin-right: 30px;
+}
+.section-team-list img {
+  max-width: none;
 }
 .section-team .title {
   /* margin-left: 67px; */
@@ -322,7 +298,6 @@ span {
 .example-btn-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 34px;
   padding-bottom: 16px;
 }
@@ -331,7 +306,6 @@ span {
   flex-wrap: wrap;
   gap: 30px;
   padding-inline-start: 0;
-  margin-bottom: 94px;
 }
 
 .img-example-item div {
@@ -346,7 +320,7 @@ span {
   max-width: 370px;
 }
 .section-example .title {
-  padding: 20px 24px 4px;
+  margin: 20px 24px 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -385,4 +359,3 @@ footer li {
 .footer-list .link:focus {
   color: var(--accent-color);
 }
-/* gap: 30px; */
