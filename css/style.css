@@ -20,7 +20,9 @@ link {
   margin: 0;
 }
 img {
-  margin: 0;
+  display: block;
+  max-width: 100%;
+  /* margin: 0; */
 }
 
 :root {
@@ -46,11 +48,14 @@ body {
   /* position: relative; */
   /* width: 1600px; */
 }
+.section {
+  padding: 94px 0;
+}
 .container {
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 header {
   background-color: #ffffff;
@@ -69,11 +74,14 @@ header {
 .nav-container {
   display: flex;
   align-items: center;
+  min-height: 80px;
+}
+.nav-subcontainer {
+  display: flex;
+  align-items: center;
 }
 /* ЛОГО */
 .logo {
-  /* display: flex; */
-  margin: 25px 0;
   margin-right: 93px;
   color: var(--primary-text-color);
   font-family: Raleway;
@@ -94,10 +102,16 @@ span {
   /* margin-right: 331px; */
   padding: 0;
 }
-.site-nav a {
+.site-nav li {
   margin-right: 50px;
 }
-.site-nav:last-child {
+.site-nav li:last-child {
+  margin-right: 0;
+}
+.auth-nav li {
+  margin-right: 50px;
+}
+.auth-nav li:last-child {
   margin-right: 0;
 }
 
@@ -121,12 +135,7 @@ span {
   margin-left: auto;
   padding: 0;
 }
-.auth-nav a {
-  margin-right: 50px;
-}
-.auth-nav a:last-child {
-  /* margin-right: 0; */
-}
+
 .auth-nav .link {
   color: var(--title-text-color);
   font-family: Roboto;
@@ -164,7 +173,7 @@ span {
   align-self: center;
   margin: 200px 452px 0;
   color: #ffffff;
-  margin: ;
+  /* margin: ; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -261,7 +270,7 @@ span {
   padding-right: 30px;
   margin-bottom: 94px;
 }
-. .section-advantage .title {
+.section-advantage .title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -324,13 +333,20 @@ span {
   padding-inline-start: 0;
   margin-bottom: 94px;
 }
+
+.img-example-item div {
+  border: 1px solid #eeeeee;
+  padding: 0;
+  border-top: none;
+  max-width: 370px;
+}
 .img-example-item {
   background: #ffffff;
-  border: 1px solid #eeeeee;
+
   max-width: 370px;
 }
 .section-example .title {
-  margin: 20px 24px 4px;
+  padding: 20px 24px 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -369,4 +385,4 @@ footer li {
 .footer-list .link:focus {
   color: var(--accent-color);
 }
-gap: 30px;
+/* gap: 30px; */
