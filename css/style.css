@@ -35,7 +35,7 @@ img {
 }
 
 body {
-  background-color: var(--primary-bacground-color);
+  background-color: #fff;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -45,7 +45,7 @@ body {
   letter-spacing: 0.03em;
 }
 .section {
-  padding: 94px 0;
+  padding: 94px 0 0 0;
 }
 .container {
   margin: 0 auto;
@@ -160,7 +160,8 @@ span {
   line-height: 1.36;
   letter-spacing: 0.06em;
   margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 /* 1 КНОПКА */
 .button-primary {
@@ -219,7 +220,7 @@ span {
   max-width: 270px;
 }
 .feature li:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 .feature p {
   max-width: 270px;
@@ -260,6 +261,7 @@ span {
 /* КОМАНДА */
 .section-team {
   background-color: #f5f4fa;
+  padding-bottom: 94px;
 }
 
 .section-team-list {
@@ -295,6 +297,9 @@ span {
 }
 
 /* main  2 */
+.section-example {
+  padding-bottom: 94px;
+}
 .example-btn-list {
   display: flex;
   justify-content: center;
@@ -320,7 +325,7 @@ span {
   max-width: 370px;
 }
 .section-example .title {
-  margin: 20px 24px 4px;
+  padding: 20px 24px 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
